@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { GRID_DATA_ITEMS } from "./data";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,6 +24,18 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div>
+          {GRID_DATA_ITEMS.map((gridDataItem) => {
+            const { id, attributes } = gridDataItem;
+
+            return(
+              <div key={id}> 
+              <Link href={attributes.href}>{attributes.text}</Link>
+              </div>
+            )
+          })}
+        </div>
+        <br />
         {children}
       </body>
     </html>
