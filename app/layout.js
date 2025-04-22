@@ -1,16 +1,18 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Ranga, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
 import { GRID_DATA_ITEMS } from "./data";
 import Link from "next/link";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const ranga = Ranga({
+  variable: "--font-ranga-bold",
   subsets: ["latin"],
+  weight: '700'
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoCondensed = Roboto_Condensed({
+  variable: '--font-roboto_condensed',
   subsets: ["latin"],
+  weight: '400'
 });
 
 export const metadata = {
@@ -20,9 +22,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${ranga.variable} ${robotoCondensed.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex justify-center items-center min-h-screen`}
+        className={`antialiased flex justify-center items-center min-h-screen`}
       >
         <div className="w-[1000px] flex flex-col items-center pt-4 pb-4">
           <div className="w-full bg-slate-100 flex flex-col items-center pb-10 pt-10">
