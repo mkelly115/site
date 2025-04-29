@@ -1,7 +1,9 @@
 // import Form from './email-list/form';
 import Followers from './followers';
+import postContact from './email-list/post-contact';
 
 export default function Page() {
+ 
   return (
     <div
       className={`w-full flex flex-col justify-center items-center
