@@ -6,7 +6,7 @@ export default function Page() {
   return (
     <div
       className={`w-full flex flex-col justify-center items-center
-      p-5 p-10 lg:p-10 text-md lg:text-lg
+      p-5 lg:p-10 text-md lg:text-lg
       bg-gradient-to-b from-slate-100 to-pink-100`}
     >
       <div className="title">Let's hang around</div>
