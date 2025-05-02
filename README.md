@@ -2,4 +2,4 @@
 
 Issues list:
 
-Update Newest Version before impliments email
+Add CSS styling to main JS page 
