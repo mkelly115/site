@@ -1,6 +1,4 @@
-export const metadata = { title: 'Connect with David Kando' }
-
-export default function Layot({ children }) {
+export default function LayoutStructure({ children }) {
  
   return (
     <div

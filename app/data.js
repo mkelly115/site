@@ -1,4 +1,3 @@
-export const SUTS_ID = 'set-up-the-switch';
 export const POISON_WORMS_ID = 'poison-worms';
 export const IN_PERPETUITY_ID = 'in-perpetuity';
 
