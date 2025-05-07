@@ -2,4 +2,6 @@
 
 Issues list:
 
-Add CSS styling to main JS page 
+- You might have to revert EVERYTHING =(
+
+    
