@@ -7,10 +7,10 @@ export async function generateStaticParams() {
     id: record.id,
     
   }));
-}
+}  // IT WAS AN ASYNC ISSUE IDIOT
 
-export default function Layout({ children, params }) {
-  const { id } = params;
+export default async function Layout({ children, params }) {
+  const { id } = await params;
   const { title, background } = RECORDS_MAP[id];
 
   return (

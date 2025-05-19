@@ -27,4 +27,3 @@ export default async function postContact({ name, email }) {
     return json
 };
 
-postContact({ name: 'foo', email: 'bar@gmail.com' });
