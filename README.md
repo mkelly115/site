@@ -2,6 +2,5 @@
 
 Issues list:
 
-- Working on other components not to be pushed yet - will continue debugging this code
-
+- BUG IS FIXED FOR GENERATIVE ID
     
