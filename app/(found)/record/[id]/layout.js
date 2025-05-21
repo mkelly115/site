@@ -1,6 +1,8 @@
 import LayoutStructure from "@/components/layout-structure";
 import { RECORDS, RECORDS_MAP } from "./data";
 
+export const dynamicParams = false
+
 export async function generateStaticParams() {
     
   return RECORDS.map((record) => ({
@@ -8,8 +10,6 @@ export async function generateStaticParams() {
     
   }));
 };
-
-export const dynamicParams = true;
 
 export async function generateMetadata({ params }){
 const { id } = params
@@ -24,7 +24,9 @@ export default async function Layout({ children, params }) {
 
   return (
     <LayoutStructure title={title} background={background}>
-      {children}
+      <div className="flex flex-col items-center">
+        {children}
+        </div>
     </LayoutStructure>
   );
 }
