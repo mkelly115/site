@@ -9,6 +9,8 @@ export async function generateStaticParams() {
   }));
 };
 
+export const dynamicParams = true;
+
 export async function generateMetadata({ params }){
 const { id } = params
 const { title } = RECORDS_MAP[id]
@@ -17,7 +19,7 @@ return { title: `${title} - David Kando` }
 }
 
 export default async function Layout({ children, params }) {
-  const { id } = await params;
+  const { id } = params;
   const { title, background } = RECORDS_MAP[id];
 
   return (
