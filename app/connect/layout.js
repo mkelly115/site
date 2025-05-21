@@ -8,7 +8,7 @@ export default function Layout({ children }) {
     background='bg-gradient-to-b from-slate-100 to-pink-100'
     title='Lets hang around'
     >
-      <div className="title">Let's hang around</div>
+      <div className="title"></div>
       <div>{children}</div>
     </LayoutStructure>
   );
