@@ -1,0 +1,18 @@
+"use client";
+
+import { usePathname } from "next/navigation";
+import LayoutStructure from "@/components/layout-structure";
+import { RECORDS_MAP, findIdByPathname } from "./[id]/data";
+
+export default async function Layout({ children }) {
+  const pathname = usePathname();
+  console.log('pathname', pathname)
+  const id = findIdByPathname(pathname)
+  const { title, background } = RECORDS_MAP[id];
+
+  return (
+    <LayoutStructure title={title} background={background}>
+      <div className="flex flex-col items-center">{children}</div>
+    </LayoutStructure>
+  );
+}

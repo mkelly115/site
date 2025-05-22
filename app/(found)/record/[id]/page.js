@@ -7,6 +7,16 @@ export async function generateStaticParams() {
     id: record.id,
   }));
 }
+
+export const dynamicParams = false
+
+export async function generateMetadata({ params }){
+const { id } = params
+const { title } = RECORDS_MAP[id]
+
+return { title: `${title} - David Kando` }
+}
+
 export default async function Page({ params }) {
   const { id } = params;
   const { date, blurb, Embed } = RECORDS_MAP[id];
