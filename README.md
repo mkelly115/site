@@ -2,5 +2,7 @@
 
 Issues list:
 
-- BUG IS FIXED FOR GENERATIVE ID
+- All that is left is titles
+- Compelted all other sections
+
     
